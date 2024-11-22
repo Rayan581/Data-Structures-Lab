@@ -212,8 +212,10 @@ int main()
     tree.insert(50);
     tree.insert(25);
 
+    cout << "Tree after insertion: ";
     tree.print();
 
+    cout << "Tree after deletion: ";
     tree.deleteTask(10);
     tree.print();
 

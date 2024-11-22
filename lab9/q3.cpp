@@ -81,7 +81,7 @@ public:
         Node *current = node;
         while (current->left != NULL)
             current = current->left;
-            
+
         return current;
     }
 
@@ -102,7 +102,7 @@ public:
         }
         else
         {
-            if(root->left == NULL && root->right == NULL)
+            if (root->left == NULL && root->right == NULL)
             {
                 delete root;
                 return NULL;
@@ -233,6 +233,9 @@ int main()
     tree.insert(40);
     tree.insert(70);
     tree.insert(60);
+
+    tree.inorder_traversal(tree.getRoot());
+    cout << endl;
 
     tree.deleteNode(tree.getRoot(), 30);
 
